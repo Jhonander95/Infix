@@ -73,3 +73,54 @@ main .main-section h1 {
 main .main-section figure img {
     width: 100%;
 }
+
+/* ----------------------section features----------------- */
+
+.features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features .features-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.features .features-container article img {
+   width: 40px;
+}
+
+.features .features-container article {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.features .features-container article a {
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    align-self: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: aliceblue;
+}
+
+.features .features-container article a:hover {
+    text-decoration: initial;
+    color: rgb(19, 17, 17);
+    align-self: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(168, 167, 240);
+}
