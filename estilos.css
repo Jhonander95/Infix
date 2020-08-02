@@ -5,6 +5,8 @@ body {
     background-color: #171929;
 }
 
+/* -----------------------Header------------------------------- */
+
 header {
     width: 100%;
     background: rgb(2,0,36);
@@ -49,4 +51,25 @@ header {
     color: #b3bbbb;
 }
 
+/* ----------------------------Main---------------------------------- */
 
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .main-section {
+    width: 70%;
+    text-align: center;
+}
+
+main .main-section h1 {
+    color: white;
+}
+
+main .main-section figure img {
+    width: 100%;
+}
