@@ -127,3 +127,49 @@ main .main-section figure img {
     line-height: 60px;
     background-color: rgb(168, 167, 240);
 }
+/* 
+--------------------------------------Responsive------------------------------------------------ */
+
+@media screen and (max-width: 1023px){
+
+}
+
+@media screen and (max-width: 768px){
+    
+    .menu-container {
+        width: 100%;
+    }
+    .menu-container nav ul li {
+        margin-left: 5px;
+    }
+    .menu-container figure {
+        width: 10%;
+     }
+     
+     .menu-container figure img {
+         width: 150px;
+     }
+    
+}
+
+@media screen and (max-width: 480px){
+    .menu-container nav ul li a {
+        font-size: 14px;
+    }
+    .features .features-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .features .features-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
