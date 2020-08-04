@@ -127,6 +127,39 @@ main .main-section figure img {
     line-height: 60px;
     background-color: rgb(168, 167, 240);
 }
+
+/* --------------------------Why------------------------- */
+
+.why {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #181F2B;
+}
+
+.why .title-why {
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.why-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
 /* 
 --------------------------------------Responsive------------------------------------------------ */
 
