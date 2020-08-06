@@ -164,7 +164,16 @@ main .main-section figure img {
 --------------------------------------Responsive------------------------------------------------ */
 
 @media screen and (max-width: 1023px){
-
+    .menu-container nav ul li {
+        margin-left: 5px;
+    }
+    .menu-container figure {
+        width: 10%;
+     }
+     
+     .menu-container figure img {
+         width: 150px;
+     }
 }
 
 @media screen and (max-width: 768px){
@@ -195,6 +204,12 @@ main .main-section figure img {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
     }
+    .grid-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 
 }
 
@@ -205,4 +220,5 @@ main .main-section figure img {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+
 }
