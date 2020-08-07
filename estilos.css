@@ -10,7 +10,7 @@ body {
 
 header {
     width: 100%;
-    height: 100px;
+    height: auto;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 43%, rgba(19,19,117,1) 100%, rgba(33,133,153,1) 100%);
     display: flex;
