@@ -1,9 +1,9 @@
-    /*
-    Flaticon icon font: Flaticon
-    Creation date: 02/08/2020 17:41
-    */
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 07/08/2020 14:50
+  	*/
 
-    @font-face {
+@font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
@@ -22,29 +22,26 @@
   }
 }
 
-    .fi:before{
-        display: inline-block;
-  font-family: "Flaticon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-    }
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
 
-    .flaticon-impresora:before { content: "\f100"; }
+.flaticon-impresora:before { content: "\f100"; }
 .flaticon-camara-de-vigilancia:before { content: "\f101"; }
 .flaticon-virus:before { content: "\f102"; }
 .flaticon-programacion:before { content: "\f103"; }
 .flaticon-la-computacion-en-nube:before { content: "\f104"; }
-    
-    $font-Flaticon-impresora: "\f100";
-    $font-Flaticon-camara-de-vigilancia: "\f101";
-    $font-Flaticon-virus: "\f102";
-    $font-Flaticon-programacion: "\f103";
-    $font-Flaticon-la-computacion-en-nube: "\f104";
+.flaticon-lista:before { content: "\f105"; }
+
+.flaticon-lista:before {
+  font-size: 30px;
+}
+.flaticon-impresora:before, .flaticon-camara-de-vigilancia:before,
+.flaticon-virus:before, .flaticon-programacion:before, 
+.flaticon-la-computacion-en-nube:before {
+  font-size: 70px;
+}

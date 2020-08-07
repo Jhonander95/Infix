@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -24,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-container figure {
@@ -34,9 +37,7 @@ header {
     width: 80%;
 }
 
-.menu-container nav {
     
-}
 
 .menu-container nav ul li {
     list-style: none;
@@ -160,6 +161,26 @@ main .main-section figure img {
     grid-gap: 10px;
 }
 
+/* --------------------------menu-hamburgera----------------------- */
+.burger-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+/*     border-radius: 50%;
+    background-color:rgba(0, 0, 0, .8);  */
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    right: 5px;
+    top: 20px;
+    color: white;
+  }
+  .flaticon-lista{
+     
+  }
+
 /* 
 --------------------------------------Responsive------------------------------------------------ */
 
@@ -177,7 +198,7 @@ main .main-section figure img {
 }
 
 @media screen and (max-width: 768px){
-    
+
     .menu-container {
         width: 100%;
     }
@@ -195,9 +216,67 @@ main .main-section figure img {
 }
 
 @media screen and (max-width: 480px){
-    .menu-container nav ul li a {
-        font-size: 14px;
+
+ 
+   
+    .menu-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    
+    .menu-container figure {
+       width: 50%;
+    }
+    
+    .menu-container figure img {
+        width: 100%;
+    }
+    .menu-container nav ul{
+        display: initial;
+    }    
+    .menu-container .menu ul li a {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        font-size: 32px;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    
+    .menu-container .menu ul li a:hover {
+
+        border-bottom: solid 1px  #b3bbbb;
+        color: #b3bbbb;
+    }
+
+    .burger-button {
+        display: block;
+      }  
+ 
+      .menu {
+        position: fixed;
+        background-color: rgba(12, 12, 12, 0.8);
+        z-index: 3;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s; 
+         
+     }  
+
+     .menu.is-active{
+         left: 0;
+     }
+  
     .features .features-container {
         width: 80%;
         display: grid;
@@ -219,6 +298,15 @@ main .main-section figure img {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
+    }
+    .menu-container .menu ul li a {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        font-size: 24px;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
 
 }
